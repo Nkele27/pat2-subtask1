@@ -16,6 +16,15 @@ The Morse code system represents letters, numbers, and punctuation marks using u
 - The space between elements within a character (dots and dashes) is one unit of time.
 - The space between characters is three units of time.
 - The space between words is seven units of time.
+  
+**Examples:**
+
+*   **E:** • (single dot)
+*   **T:** — (single dash)
+*   **I:** •• (two dots)
+*   **A:** •— (dot followed by a dash)
+*   **M:** —— (two dashes)
+*   **SOS:** •••———••• (three dots, three dashes, three dots - a well-known distress signal)
 
 ## reference
 https://www.google.com/search?q=Edit+the+README.md+file+to+include+the+following+information+about+Morse+code%3A+-+A+brief+overview+of+what+Morse+code+is.+-+The+historical+context+of+why+Morse+code+was+created.+-+An+explanation+of+how+the+Morse+code+system+works%2C+including+the+use+of+dots+and+dashes.
