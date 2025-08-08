@@ -13,7 +13,7 @@ Morse code was invented in the 1830s by Samuel F.B. Morse and Alfred Vail, prima
 The Morse code system represents letters, numbers, and punctuation marks using unique combinations of dots and dashes. Each character has a specific sequence assigned to it (e.g., 'E' is a single dot, 'T' is a single dash). The system relies on precise timing:
 - A dot represents a short unit of time.
 - A dash represents three units of time.
-- The space between elements within a character (dots and dashes) is one unit of time.
+- The space between elements within a character (dots and dashes) is one unit of time
 - The space between characters is three units of time.
 - The space between words is seven units of time. 
 **Examples:**
