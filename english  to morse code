@@ -1,0 +1,41 @@
+#include <iostream>
+#include <map>
+#include <string>
+#include <cctype>
+
+using namespace std;
+
+// Morse code dictionary using '.' for dot and '-' for dash
+map<char, string> morseCode = {
+    {'A', ".-"},   {'B', "-..."}, {'C', "-.-."}, {'D', "-.."},  {'E', "."},
+    {'F', "..-."}, {'G', "--."},  {'H', "...."}, {'I', ".."},   {'J', ".---"},
+    {'K', "-.-"},  {'L', ".-.."}, {'M', "--"},   {'N', "-."},   {'O', "---"},
+    {'P', ".--."}, {'Q', "--.-"}, {'R', ".-."},  {'S', "..."},  {'T', "-"},
+    {'U', "..-"},  {'V', "...-"}, {'W', ".--"},  {'X', "-..-"}, {'Y', "-.--"},
+    {'Z', "--.."}
+};
+
+int main() {
+    string message;
+    cout << "Enter a short message in English: ";
+    getline(cin, message);
+
+    string fullMorse = "";
+
+    for (char ch : message) {
+        if (isalpha(ch)) {
+            char upperCh = toupper(ch);
+            string morse = morseCode[upperCh];
+
+            // Output individual letter and its Morse code
+            cout << upperCh << ": " << morse << endl;
+
+            // Append to full Morse message with 3 spaces
+            fullMorse += morse + "   ";
+        }
+    }
+
+    cout << "\nFull Morse Code Message:\n" << fullMorse << endl;
+
+    return 0;
+}
